@@ -1,50 +1,62 @@
-// Do not edit the below code
-const stringResult = document.getElementById('string-result');
-const numberResult = document.getElementById('number-result');
-const booleanResult = document.getElementById('boolean-result');
-const nullResult = document.getElementById('null-result');
-const undefinedResult = document.getElementById('undefined-result');
-const check = document.getElementById('check');
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super-Over</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-// Instructions for this lab: After completing every challenge click on the check button to check the status of completion. If your code for a respective challenge is correct then the status will be changed to "completed".
-
-// Challenge 1: Assign a string value to the below variable.
-
-var stringData = 'This is a string';
-// Your code goes here
-
-// Challenge 2: Assign a number value to the below variable.
-var numbersData = 123;
-// Your code goes here
-
-// Challenge 3: Assign a boolean value to the below variable.
-var booleanData = true;
-// Your code goes here
-
-// Challenge 4: Assign a null value to the below variable.
-var nullData = null;
-// Your code goes here
-
-// Challenge 5: Assign an undefined value to the below variable.
-var undefinedData;
-// Your code goes here
-
-// Do not edit the below code
-
-check.onclick = () => {
-  if (typeof stringData === 'string') {
-    stringResult.innerHTML = 'Completed';
-  }
-  if (typeof numbersData === 'number') {
-    numberResult.innerHTML = 'Completed';
-  }
-  if (typeof booleanData === 'boolean') {
-    booleanResult.innerHTML = 'Completed';
-  }
-  if (typeof nullData === 'object') {
-    nullResult.innerHTML = 'Completed';
-  }
-  if (typeof undefinedData === 'undefined') {
-    undefinedResult.innerHTML = 'Completed';
-  }
-};
+  <body>
+    <img
+      id="logo"
+      src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-logo.png"
+    />
+    <section>
+      <div class="score" id="team1">
+        <h1>Eng</h1>
+        <div id="team1-superover" class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <div class="scoreboard">
+          <span id="score-team1">0</span>
+          <span>/</span>
+          <span id="wickets-team1">0</span>
+        </div>
+      </div>
+      <div class="score" id="team2">
+        <h1>Aus</h1>
+        <div id="team2-superover" class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <div class="scoreboard">
+          <span id="score-team2">0</span>
+          <span>/</span>
+          <span id="wickets-team2">0</span>
+        </div>
+      </div>
+    </section>
+    <section id="buttons">
+      <img
+        class="button"
+        id="strike"
+        src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-strike-button.png"
+      />
+      <img
+        class="button"
+        id="reset"
+        src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-reset-button.png"
+      />
+    </section>
+  </body>
+</html>
